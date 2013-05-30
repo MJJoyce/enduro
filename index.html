@@ -1,1 +1,42 @@
-Landing page of Enduro Project
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Enduro - Race Strategy Planning</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Simple Endurance Race Planning">
+        <meta name="author" content="Cameron Goodale">
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="text-center">Enduro Project</h1>
+            <h2>Purpose:</h2>
+            <p class="lead">This is a simple web app to help calculate different endurance
+            racing strategies.  We take into consideration lap time, stint duration,
+            pit times, and race length.</p>
+            <p>Version 0.1 is going to be dirt simple by design.  We want to get the 
+            basics down first, then iterate and add more features later.
+            </p>
+
+            <form>
+                <fieldset>
+                    <legend>Race Variables</legend>
+                    <label>Race Duration (hr:min)</label>
+                    <input type="text" placeholder="24:00">
+                    <label>Average Stint (min:sec)</label>
+                    <input type="text" placeholder="2:00">
+                    <label>Average Pit Stop (min:sec)</label>
+                    <input type="text" placeholder="5:00">
+                    <label>Average Lap Time (min:sec)</label>
+                    <input type="text" placeholder="1:55">
+                    <span class="help-block">Be honest on this one ;)</span>
+                    <button type="submit" class="btn">Submit</button>
+                </fieldset>
+                </form>
+        </div>
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+
+
+</html>
