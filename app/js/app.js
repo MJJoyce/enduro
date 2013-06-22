@@ -1,10 +1,8 @@
 'use strict';
 
 
-// Declare app level module which depends on filters, and services
-angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives', 'myApp.controllers']).
-  config(['$routeProvider', function($routeProvider) {
-    $routeProvider.when('/view1', {templateUrl: 'partials/partial1.html', controller: 'MyCtrl1'});
-    $routeProvider.when('/view2', {templateUrl: 'partials/partial2.html', controller: 'MyCtrl2'});
-    $routeProvider.otherwise({redirectTo: '/view1'});
-  }]);
+// We'll need to include some dependencies once we add filters, services, directives, and controllers
+//var app = angular.module('enduro', ['enduro.filters', 'enduro.services', 'enduro.directives', 'enduro.controllers'])
+//
+// For now just declare the bare minimum
+var app = angular.module('enduro', []);
